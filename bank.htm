@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banking System</title>
+    <link rel="stylesheet" type="text/css" href="bank.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to XYZ Bank</h1>
+        <div id="balance">Balance: $0</div>
+        <form id="transactionForm">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" min="1" step="1" required>
+            <button type="submit">Deposit</button>
+            <button type="button" onclick="withdraw()">Withdraw</button>
+        </form>
+        <div id="transactionStatus"></div>
+    </div>
+    <script src="bank.js"></script>
+</body>
+</html>
